@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Pertamaku</title>
-    <style>
-      h1 {
-        font-size: 5vw;
+<head>
+  <title>Responsive Button Layout</title>
+  <style>
+    body {
+      max-width: 800px;
+    }
+    .button-group {
+      display: flex;
+    }
+    button {
+      font-size: 25px;
+      width: 100%;
+    }
+
+    /* Media query untuk lebar layar <= 600px */
+    @media (max-width: 600px) {
+      .button-group {
+        display: flex;
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
       }
-    </style>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+    }
+  </style>
+</head>
+<body>
+  <h1>Cat Ltd.</h1>
+  <img
+    src="https://static-assets.skilvul.com/lesson/intro-to-css/responsive-design-percentage-cat.jpeg"
+    width="100%"
+  />
+  <div class="button-group">
+    <button>Talk to Us</button>
+    <button>Download Syllabus</button>
+    <button>Be a Partner</button>
+    <button>Join Class</button>
+  </div>
+</body>
 </html>
