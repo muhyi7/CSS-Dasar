@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Menghubungkan HTML dengan CSS</title>
-  <link rel="stylesheet" href="contoh.css">
-</head>
-<body>
-  <h1>Beranda</h1>
-  <h1>Galeri</h1>
-  <h1>Tentang Kami</h1>
-  <h1>Kontak</h1>
-</body>
+<html>
+  <head>
+    <style>
+      	a::before {
+	        content: "Link - ";
+        }
+    </style>
+  </head>
+  <body>
+	<ul>
+	    <li><a href="#">Download part 1</a></li>
+	    <li><a href="#">Download part 2</a></li>
+	    <li><a href="#">Download part 3</a></li>
+	</ul>
+  </body>
 </html>
