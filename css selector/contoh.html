@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      div.fixed {
+        position: fixed;
+        top: 100px;
+        width: 300px;
+        padding: 10px 20px;
+        background: #73ad21;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
 
-<head>
-	<style>
-		.small-square {
-			position: absolute;
-			right: 0;
-			height: 80px;
-			width: 80px;
-			background: yellow;
-		}
-
-		.medium-square {
-			height: 200px;
-			width: 300px;
-			background: red;
-		}
-
-		.big-square {
-			position: relative;
-			height: 400px;
-			width: 400px;
-			background: deepskyblue;
-		}
-	</style>
-</head>
-
-<body>
-	<div class="big-square">
-		<div class="medium-square">
-			<div class="small-square"></div>
-		</div>
-	</div>
-</body>
-
+    <div class="fixed">
+      This div element has position: fixed;
+    </div>
+  </body>
 </html>
