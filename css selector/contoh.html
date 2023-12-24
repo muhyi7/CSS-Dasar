@@ -2,17 +2,24 @@
 <html>
   <head>
     <style>
-      div.fixed {
-        position: fixed;
-        top: 100px;
-        width: 300px;
-        padding: 10px 20px;
-        background: #73ad21;
+      .sticky {
+        position: sticky;
+        top: 30px;
+        padding: 5px;
+        background-color: yellow;
+        border: 2px solid blue;
+      }
+      p.content {
+          height: 100vh
       }
     </style>
   </head>
   <body>
-    <p>
+    <p>Cobalah scroll halaman website ini</p>
+
+    <div class="sticky">I am sticky!</div>
+
+    <p class="content">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -22,8 +29,6 @@
       est laborum.
     </p>
 
-    <div class="fixed">
-      This div element has position: fixed;
     </div>
   </body>
 </html>
