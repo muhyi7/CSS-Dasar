@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Inline CSS</title>
     <style>
-      h1 {
+      .inline-block {
+        background: blue;
+        width: 100px;
+        height: 100px;
+        margin: 4px;
         display: inline-block;
-        background: lightblue;
+      }
+
+      .relative {
+        position: relative;
+        top: 40px;
       }
     </style>
   </head>
+
   <body>
-    <h1 id="demo1">Saya bahagia</h1>
-    <h1 id="demo2">karena besok libur</h1>
+    <div>
+      <div class="inline-block"></div>
+      <div class="inline-block relative"></div>
+      <div class="inline-block"></div>
+    </div>
   </body>
 </html>
