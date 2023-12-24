@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      .inline-block {
-        background: blue;
-        width: 100px;
-        height: 100px;
-        margin: 4px;
-        display: inline-block;
-      }
 
-      .relative {
-        position: relative;
-        top: 40px;
-      }
-    </style>
-  </head>
+<head>
+	<style>
+		.small-square {
+			position: absolute;
+			right: 0;
+			height: 80px;
+			width: 80px;
+			background: yellow;
+		}
 
-  <body>
-    <div>
-      <div class="inline-block"></div>
-      <div class="inline-block relative"></div>
-      <div class="inline-block"></div>
-    </div>
-  </body>
+		.medium-square {
+			height: 200px;
+			width: 300px;
+			background: red;
+		}
+
+		.big-square {
+			position: relative;
+			height: 400px;
+			width: 400px;
+			background: deepskyblue;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="big-square">
+		<div class="medium-square">
+			<div class="small-square"></div>
+		</div>
+	</div>
+</body>
+
 </html>
