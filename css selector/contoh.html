@@ -1,37 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Inline CSS</title>
+    <style>
+      .green-text {
+        background: lightgreen;
+      }
+      .blue-text {
+        background: lightblue;
+      }
+    </style>
   </head>
-  <style>
-    div {
-      width: 600px;
-      background: lightblue;
-    }
-    img {
-      width: 150px;
-      background: lightgreen;
-      padding: 10px;
-      border: 2px solid black;
-
-      /* tambahkan properti box-sizing: border-box */
-      box-sizing: border-box;
-    }
-  </style>
   <body>
-    <div>
-      <img
-        src="https://static-assets.skilvul.com/lesson/intro-to-css/cat.jpg"
-      />
-      <img
-        src="https://static-assets.skilvul.com/lesson/intro-to-css/cat.jpg"
-      />
-      <img
-        src="https://static-assets.skilvul.com/lesson/intro-to-css/cat.jpg"
-      />
-      <img
-        src="https://static-assets.skilvul.com/lesson/intro-to-css/cat.jpg"
-      />
-    </div>
+    <p class="green-text">Teks dengan latar belakang hijau</p>
+    <p class="blue-text">Teks dengan latar belakang biru</p>
+    <span class="green-text">Teks dengan latar belakang hijau</span>
+    <span class="blue-text">Teks dengan latar belakang biru</span>
   </body>
-</html>
